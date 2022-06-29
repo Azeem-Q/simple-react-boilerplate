@@ -28,6 +28,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(), 
         new HtmlWebpackPlugin({
             title: 'React Boilerplate',
+            inject: false,
             template: path.resolve(__dirname, './src/index.html'),
         }),
     ],
